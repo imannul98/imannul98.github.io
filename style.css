@@ -1,0 +1,105 @@
+#scrolly {
+    position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    background-color: #ffffff;
+    padding: 1rem;
+}
+
+#scrolly>* {
+    -webkit-box-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+}
+
+article {
+    position: relative;
+    padding: 0 1rem;
+    max-width: 20rem;
+}
+
+svg {
+    position: -webkit-sticky;
+    position: sticky;
+    width: 100%;
+    margin: 0;
+    -webkit-transform: translate3d(0, 0, 0);
+    -moz-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+    background-color: #f4f3f3;
+    z-index: 0;
+}
+
+
+.step {
+    margin: 0 auto 2rem auto;
+    background-color: lightcoral;
+    color: #fff;
+}
+
+.step:last-child {
+    margin-bottom: 0;
+}
+
+.step.is-active {
+    background-color: lightblue;
+    color: #3b3b3b;
+}
+
+.step p {
+    text-align: center;
+    padding: 1rem;
+    font-size: 1.5rem;
+}
+
+.selected {
+    opacity: 1;
+    fill: #f588f0;
+    /* stroke: #fff; */
+    /* stroke-width: 2px; */
+  }
+
+
+  g.axis text,
+  g.x-axis text,
+  g.y-axis text {
+      font-size: 25;
+  }
+
+  .controls {
+    margin-top: -5px; /* Adjust space above the dropdown */
+    margin-bottom: 20px; /* Adjust space below the dropdown */
+}
+  
+  .controls div {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  select {
+    margin-top: 5px;
+  }
+
+  
+  .hovered {
+    opacity: 1
+  }
+  
+  .active {
+    stroke: #fff;
+    stroke-width: 4;
+  }
+  
+.tooltip {
+    position: absolute;
+    text-align: center;
+    padding: 8px;
+    font: 18px;
+    background: rgba(0, 0, 0, 0.8);
+    color: #fff;
+    border-radius: 8px;
+    pointer-events: none;
+    opacity: 0;
+    /* transition: opacity 0.3s; */
+  }
